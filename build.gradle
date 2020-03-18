@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+application {
+    mainClassName = 'Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "net.bytebuddy:byte-buddy:1.10.8"
+    compile "net.bytebuddy:byte-buddy-agent:1.10.8"
+    runtime "net.java.dev.jna:jna:5.5.0"
+    runtime "net.java.dev.jna:jna-platform:5.5.0"
+}
